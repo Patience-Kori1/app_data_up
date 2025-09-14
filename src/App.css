@@ -12,6 +12,10 @@
   border-radius: 2rem;
 }
 
+hr {
+  color:#646cffaa
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
