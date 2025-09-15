@@ -12,10 +12,31 @@
   border-radius: 2rem;
 }
 
-hr {
-  color:#646cffaa
+.Car {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+.hr {
+  color:#646cffaa;
+  width: 10rem;
+  
+}
+
+img {
+  width: 10rem;
+ 
+}
+/* svg {
+  background-color: #fff;
+  margin-bottom: 3rem;
+   margin-top: 4rem;
+} */
+
+.carBorder {
+  border:1px solid red;
+}
 .logo {
   height: 6em;
   padding: 1.5em;

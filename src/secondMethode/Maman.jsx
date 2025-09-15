@@ -1,5 +1,6 @@
 import { Component } from 'react';
 import Toto from './Toto';
+import Form from './Form'
 
 class Maman extends Component {
     state = {
@@ -15,20 +16,27 @@ class Maman extends Component {
     render() {
         return (
             <div>
+
+                <Form/>
+
+                <hr className="hr"/>
+
                 <h1>Maman</h1>
                 <button 
+                    className="btnMaman"
                     onClick={() => this.ordreMaman("Va ranger ta chambre")}
                 >Ordre de maman</button>
 
                 <p>{this.state.messageMaman}</p>
 
-                <hr />
+                <hr className="hr"/>
                 
                 <Toto 
                     name="Toto"
                     reponseTotoProps={this.reponseToto}
                     leState={this.state}
                 />
+                
             </div>
         )
     }
