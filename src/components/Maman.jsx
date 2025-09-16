@@ -14,7 +14,7 @@ class Maman extends Component {
         })
     }
 
-    reponseToto = () => {
+    reponseTotoFunction = () => {
         this.setState({
            messageToto: "D'accord maman" 
         })
@@ -33,7 +33,7 @@ class Maman extends Component {
                 <Toto 
                     name="Toto" 
                     leState={this.state}
-                    reponseToto={this.reponseToto}
+                    reponseTotoProps = {this.reponseTotoFunction}
                 />
 
             </div>

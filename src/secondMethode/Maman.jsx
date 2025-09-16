@@ -9,7 +9,6 @@ class Maman extends Component {
         disabled: true
     }
 
-    // Compléter le code de la méthode ordreMaman.
     ordreMaman = (msg) => this.setState({messageMaman: msg, disabled:false})
     reponseToto = msg => this.setState({ messageToto: msg });
 

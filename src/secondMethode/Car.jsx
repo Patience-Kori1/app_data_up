@@ -5,13 +5,13 @@ const Car = (props) => {
   return (
     <div className="Car">
 
-      <img src={car} alt="" />
-
       <hr className="hr"/>
+
+      <h2>Image en SVG</h2>
 
       <svg
         className='carBorder'
-        xmlns="http://www.w3.org/2000/svg"
+        xmlns="http://www.w3.org/2000/svg" // Namespace SVG obligatoire
         width="120"
         height={props.height}
       >
@@ -37,7 +37,9 @@ const Car = (props) => {
 
       </svg>
 
-      <hr className="hr"/>
+      <h2>Image en PNG</h2>
+
+      <img src={car} alt="" />
       
     </div>
   )
