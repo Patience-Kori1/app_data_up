@@ -54,7 +54,10 @@ img {
   font-weight: 800;
   color : Maroon;
 }
-
+.userComment {
+  color : rgb(154, 124, 5);
+  font-weight: 500;
+}
 
 .logo {
   height: 6em;
