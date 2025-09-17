@@ -34,18 +34,31 @@ export class Form extends Component {
       console.log(`Pseudo : ${this.state.username}, couleur ${this.state.color}, commentaire : ${this.state.username}`)
   }
 
+  // titreRouge = {
+  //     fontSize: "27px", 
+  //     color:"red"
+  // }
+
   render() {
+    const titreRouges = { // si on le déclare ici et pas au dessus du reender on n'a pas besoin d'utiliser le this dans la vue en bas du return
+      fontSize: "27px", 
+      color:"red"
+  }
+
     return (
       <div>
 
-        <h2> Formulaire commentaire </h2>
+        <h2 style={titreRouges}> Formulaire commentaire </h2>
         
         <form action="" onSubmit = {this.handleSubmitForm }>
-          
-          <div className="commentForm">
-            <p className= " userName "style = {{backgroundColor :this.state.color}}>Affichage pseudo :  <span>{this.state.username}</span></p>
+          <h4>Affichage du commentaire</h4>
+          <p className= " userName "style = {{backgroundColor :this.state.color}}>Affichage pseudo :  <span>{this.state.username}</span></p>
 
-            <p className= " userComment " style = {{ color :this.state.color}}>Commentaire  :  <span>{this.state.comment}</span></p>
+          <p className= " userComment " style = {{ color :this.state.color}}>Commentaire  :  <span>{this.state.comment}</span></p> 
+          <h3>Saisie du commentaire</h3>
+          <div className="commentForm">
+
+            
             <label htmlFor="Pseudo">Saisie pseudo : </label>
 
             <input 
@@ -83,7 +96,7 @@ export class Form extends Component {
             <textarea value= {this.state.comment} onChange={this.handleComments}></textarea>
           </div>
 
-          <button className="commentForm"> Envoyer</button>
+          <button class="btn btn-primary"> Envoyer</button>
 
           
 
