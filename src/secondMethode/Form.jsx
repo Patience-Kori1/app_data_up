@@ -28,13 +28,19 @@ export class Form extends Component {
     })
   }
 
+  handleSubmitForm = e => {
+
+      e.preventDefault();
+      console.log(`Pseudo : ${this.state.username}, couleur ${this.state.color}, commentaire : ${this.state.username}`)
+  }
+
   render() {
     return (
       <div>
 
         <h2> Formulaire commentaire </h2>
         
-        <form action="">
+        <form action="" onSubmit = {this.handleSubmitForm }>
           
           <div className="commentForm">
             <p className= " userName "style = {{backgroundColor :this.state.color}}>Affichage pseudo :  <span>{this.state.username}</span></p>
@@ -77,9 +83,13 @@ export class Form extends Component {
             <textarea value= {this.state.comment} onChange={this.handleComments}></textarea>
           </div>
 
-          <Car color="red" height="100"/>
+          <button className="commentForm"> Envoyer</button>
+
+          
 
         </form>
+
+        <Car color={this.state.color} height="100"/>
 
       </div>
     )

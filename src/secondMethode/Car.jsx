@@ -2,6 +2,7 @@ import React from 'react'
 import car from './img_car.png'
 
 const Car = (props) => {
+  console.log(props)
   return (
     <div className="Car">
 
@@ -22,7 +23,7 @@ const Car = (props) => {
         </g>
         <g>
           <title>Layer 1</title>
-          <path fill="#222222" fillRule="nonzero" strokeWidth="12.257193" width="250" d="M30 18 L45 8 L80 8 L95 18 Z"  />
+          <path fill={props.color} fillRule="nonzero" strokeWidth="12.257193" width="250" d="M30 50 L45 8 L80 8 L95 100 Z"  />
         </g>
 
         
