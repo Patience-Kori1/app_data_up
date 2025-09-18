@@ -73,7 +73,7 @@ export class Form extends Component {
 
               <select 
                 name="color" 
-                value= {this.state.color} 
+                value= {this.state.color}  
                 onChange={this.handleColor}
               >
 
@@ -89,7 +89,7 @@ export class Form extends Component {
                 <option value="" className="orange"> orange </option> */}
 
               </select>
-          </div>
+        </div>
 
           <div className="commentForm">
             <label htmlFor="">Commentaire</label>

@@ -1,6 +1,8 @@
 
 import './App.css'
-import Maman from './secondMethode/Maman'
+import StyleBoutik from './tp/StyleBoutik'
+
+// import Maman from './secondMethode/Maman'
 // import Maman from './components/Maman'
 
 function App() {
@@ -8,7 +10,7 @@ function App() {
 
   return (
     <div  className="App">
-      <Maman/>
+      <StyleBoutik/>
     </div>
   )
 }
