@@ -12,11 +12,11 @@ export class Product extends Component {
   state = {
     products : [
       {src:BasketsConverse, name:"Basket Converse", prix: 35}, 
-      {src:ChemiseArmani,  name:"Basket Converse", prix: 35}, 
-      {src:ChemiseGant,  name:"Basket Converse", prix: 35}, 
-      {src:StanSmith,  name:"Basket Converse", prix: 35}, 
-      {src:SweatCapuche,  name:"Basket Converse", prix: 35}, 
-      {src:TommyPull,  name:"Basket Converse", prix: 35}
+      {src:ChemiseArmani,  name:"Chemise Armani", prix: 35}, 
+      {src:ChemiseGant,  name:"Chemise Gant", prix: 35}, 
+      {src:StanSmith,  name:"Basket Stan Smith", prix: 35}, 
+      {src:SweatCapuche,  name:"SweatCapuche", prix: 35}, 
+      {src:TommyPull,  name:"Tommy Pull", prix: 35}
     ]
   }
   
@@ -34,7 +34,7 @@ export class Product extends Component {
               return (
                 <div>
                       <img src={this.state.products[index].src} alt="" className='img'/>
-                      <h3>{this.state.products[index].name}</h3>
+                      <h4>{this.state.products[index].name}</h4>
                       <button class="btn btn-primary" type="button">
                         Donner votre avis sur : <span> </span> 
                         <img 

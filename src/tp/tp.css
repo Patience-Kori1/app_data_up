@@ -1,0 +1,50 @@
+.Product {
+  padding: 2rem;
+  /* background-color: #b68080; */
+  display: flex;
+  flex-direction: column;
+}
+
+.Product h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+
+.imgDiv {
+  /* background-color: #12af3f; */
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+  padding: 1rem;
+  flex-wrap: wrap;
+
+}
+
+.imgDiv > div {
+  background: white;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  /* background-color: #e3c4b0; */
+}
+
+.img {
+  width: 18rem;
+  padding-bottom: 1rem;
+}
+
+.imgDiv h3 {
+  margin: 0.5rem 0;
+  font-weight: 600;
+}
+
+.btn {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.imgSmall {
+  width: 2rem;
+  border-radius: 50%;
+}
+
