@@ -29,6 +29,8 @@ export class Product extends Component {
 
     // console.log(this.props.visible)
 
+    
+
     return (
       <div className="Product">
         <h2>Notre collection de produit</h2>
@@ -38,6 +40,7 @@ export class Product extends Component {
            this.state.products.map((value, index)=>{
               return (
                 <div key={index} >
+                  {console.log({index})} 
                       <img src={this.state.products[index].src} alt="" className='img'/>
 
                       <h4>{this.state.products[index].name}</h4>
@@ -45,7 +48,7 @@ export class Product extends Component {
                       <button 
                         className="btn btn-primary" 
                         type="button"
-                        onClick={this.props.unVisible}
+                        onClick={this.props.unVisible }
 
                       >
 
@@ -54,15 +57,16 @@ export class Product extends Component {
                           src={this.state.products[index].src} 
                           className='imgSmall'  
                         />
+
                       </button>
                       {/* {console.log(this.props.unVisible)} */}
 
-                    {/* <div className="hidden">
+                    <div className="hidden">
                       <ReviewForm
                       
                       srcArticle= {this.state.products[index].src} 
                       />
-                    </div> */}
+                    </div>
                       
                       
                 </div>
